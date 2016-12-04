@@ -7,7 +7,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		double a, b ;
+		double a, b;
+
 		while (true) {
 			System.out.println("ВЫБЕРИТЕ ДЕЙСТВИЕ:");
 			System.out.println("add - cложение ; sub - вычитание; mult - умножение;"
@@ -79,7 +80,7 @@ public class Main {
 					System.out.println("Скорее всего вы ошиблись при вводе. Попробуйте ещё раз.");
 				}
 			}
-			
+
 			if (answer.equals("q")) {
 				System.exit(0);
 			}

@@ -1,5 +1,4 @@
 package by.malkevich.simplecalc;
-
 /**
  * 
  * @author serg
