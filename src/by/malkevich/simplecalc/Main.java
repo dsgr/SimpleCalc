@@ -7,80 +7,79 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		double a, b;
-
+		double a, b ;
 		while (true) {
-			System.out.println("ВЫБЕРИТЕ ДЕЙСТВИЕ:");
-			System.out.println("add - cложение ; sub - вычитание; mult - умножение;"
-					+ " div - деление; pow - возведение в степень; q - выход ");
+			System.out.println("Р’Р«Р‘Р•Р РРўР• Р”Р•Р™РЎРўР’РР•:");
+			System.out.println("add - cР»РѕР¶РµРЅРёРµ ; sub - РІС‹С‡РёС‚Р°РЅРёРµ; mult - СѓРјРЅРѕР¶РµРЅРёРµ;"
+					+ " div - РґРµР»РµРЅРёРµ; pow - РІРѕР·РІРµРґРµРЅРёРµ РІ СЃС‚РµРїРµРЅСЊ; q - РІС‹С…РѕРґ ");
 			String answer = sc.nextLine();
 
 			if (answer.equals("add")) {
 				try {
-					System.out.println("СЛОЖЕНИЕ");
-					System.out.println("Введите первое число:");
+					System.out.println("РЎР›РћР–Р•РќРР•");
+					System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ:");
 					a = sc.nextDouble();
-					System.out.println("Введите второе число:");
+					System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ:");
 					b = sc.nextDouble();
-					System.out.println("РЕЗУЛЬТАТ: " + SimpleCalc.add(a, b));
+					System.out.println("Р Р•Р—РЈР›Р¬РўРђРў: " + SimpleCalc.add(a, b));
 				} catch (InputMismatchException e) {
-					System.out.println("Скорее всего вы ошиблись при вводе. Попробуйте ещё раз.");
+					System.out.println("РЎРєРѕСЂРµРµ РІСЃРµРіРѕ РІС‹ РѕС€РёР±Р»РёСЃСЊ РїСЂРё РІРІРѕРґРµ. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.");
 				}
 			}
 
 			if (answer.equals("sub")) {
 				try {
-					System.out.println("ВЫЧИТАНИЕ");
-					System.out.println("Введите первое число:");
+					System.out.println("Р’Р«Р§РРўРђРќРР•");
+					System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ:");
 					a = sc.nextDouble();
-					System.out.println("Введите второе число:");
+					System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ:");
 					b = sc.nextDouble();
-					System.out.println("РЕЗУЛЬТАТ: " + SimpleCalc.sub(a, b));
+					System.out.println("Р Р•Р—РЈР›Р¬РўРђРў: " + SimpleCalc.sub(a, b));
 				} catch (InputMismatchException e) {
-					System.out.println("Скорее всего вы ошиблись при вводе. Попробуйте ещё раз.");
+					System.out.println("РЎРєРѕСЂРµРµ РІСЃРµРіРѕ РІС‹ РѕС€РёР±Р»РёСЃСЊ РїСЂРё РІРІРѕРґРµ. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.");
 				}
 			}
 
 			if (answer.equals("mult")) {
 				try {
-					System.out.println("УМНОЖЕНИЕ");
-					System.out.println("Введите первое число:");
+					System.out.println("РЈРњРќРћР–Р•РќРР•");
+					System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ:");
 					a = sc.nextDouble();
-					System.out.println("Введите второе число:");
+					System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ:");
 					b = sc.nextDouble();
-					System.out.println("РЕЗУЛЬТАТ: " + SimpleCalc.mult(a, b));
+					System.out.println("Р Р•Р—РЈР›Р¬РўРђРў: " + SimpleCalc.mult(a, b));
 				} catch (InputMismatchException e) {
-					System.out.println("Скорее всего вы ошиблись при вводе. Попробуйте ещё раз.");
+					System.out.println("РЎРєРѕСЂРµРµ РІСЃРµРіРѕ РІС‹ РѕС€РёР±Р»РёСЃСЊ РїСЂРё РІРІРѕРґРµ. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.");
 				}
 			}
 
 			if (answer.equals("div")) {
 				try {
-					System.out.println("ДЕЛЕНИЕ");
-					System.out.println("Введите первое число:");
+					System.out.println("Р”Р•Р›Р•РќРР•");
+					System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ:");
 					a = sc.nextDouble();
-					System.out.println("Введите второе число:");
+					System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ:");
 					b = sc.nextDouble();
-					System.out.println("РЕЗУЛЬТАТ: " + SimpleCalc.div(a, b));
+					System.out.println("Р Р•Р—РЈР›Р¬РўРђРў: " + SimpleCalc.div(a, b));
 				} catch (InputMismatchException e) {
-					System.out.println("Скорее всего вы ошиблись при вводе. Попробуйте ещё раз.");
+					System.out.println("РЎРєРѕСЂРµРµ РІСЃРµРіРѕ РІС‹ РѕС€РёР±Р»РёСЃСЊ РїСЂРё РІРІРѕРґРµ. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.");
 				}
 
 			}
 
 			if (answer.equals("pow")) {
 				try {
-					System.out.println("ВОЗВЕДЕНИЕ В СТЕПЕНЬ");
-					System.out.println("Введите число:");
+					System.out.println("Р’РћР—Р’Р•Р”Р•РќРР• Р’ РЎРўР•РџР•РќР¬");
+					System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:");
 					a = sc.nextDouble();
-					System.out.println("Введите степень:");
+					System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ:");
 					b = sc.nextDouble();
-					System.out.println("РЕЗУЛЬТАТ: " + SimpleCalc.pow(a, b));
+					System.out.println("Р Р•Р—РЈР›Р¬РўРђРў: " + SimpleCalc.pow(a, b));
 				} catch (InputMismatchException e) {
-					System.out.println("Скорее всего вы ошиблись при вводе. Попробуйте ещё раз.");
+					System.out.println("РЎРєРѕСЂРµРµ РІСЃРµРіРѕ РІС‹ РѕС€РёР±Р»РёСЃСЊ РїСЂРё РІРІРѕРґРµ. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰С‘ СЂР°Р·.");
 				}
 			}
-
+			
 			if (answer.equals("q")) {
 				System.exit(0);
 			}
